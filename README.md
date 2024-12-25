@@ -21,3 +21,4 @@ This is a full-stack eCommerce website built using the **MERN Stack** (MongoDB, 
 
 - Sample Preview of website is available here -- https://e-commerceshoppingcart-jqnunchm8-rithvijs-projects-cd5a446b.vercel.app/#
 
+![App Preview](./app-preview.jpeg)
