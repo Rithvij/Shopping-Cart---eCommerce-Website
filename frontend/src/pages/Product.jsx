@@ -22,7 +22,7 @@ const Product = () => {
       }
     })
   }
-  
+
   useEffect(()=>{
     fetchProductData();
   },[productId,products])
@@ -43,9 +43,11 @@ const Product = () => {
                 })
               }
           </div>
-          <div className='w-full sm:w-[80%]'>
-            <img className='w-full h-auto' src={image} alt=""></img>
+          
+          <div className='w-full sm:w-[80%] max-w-[500px] mx-auto'>
+            <img className='w-full h-auto' src={image} alt="" />
           </div>
+
           {/* Product Info */}
           <div className='flex-1'>
               <h1 className='font-medium text-2xl mt-2'>{productData.name}</h1>
