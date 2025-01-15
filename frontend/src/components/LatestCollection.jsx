@@ -13,14 +13,14 @@ const LatestCollection = () => {
         It runs after rendering and runs when the dependency changes */}
     useEffect(()=>{
          setLatestProducts(products.slice(0,10));
-    },[])
+    },[products])
 
   return (
     <div className='my-10'>
       <div className='text-center py-8 text-3xl'>
         <Title text1={'Latest'} text2={'Collection'}></Title>
         <p className='w-3/4 m-auto text-xs sm:text-sm md:text-base text-gray-600'>
-            Sample text
+            
         </p>
       </div>
 

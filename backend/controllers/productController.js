@@ -91,4 +91,51 @@ const singleProduct = async (req,res)=>{
     
 }
 
+
+
+// Update first 6 products with bestseller: true
+// const updateFirst6Products = async () => {
+//   try {
+//     // Find first 6 products
+//     const products = await productModel.find();
+
+//     // Extract product IDs
+//     //const ids = products.map(product => product._id);
+//     // const names = products.map((item)=>item.name.split(" ")[0])
+//     // const namesfilt = products.filter((item)=>item.name.split(" ")[0] === "Women")
+
+    
+//     // const womenfilter = products.filter((item)=>item.name.split(" ")[0] === "Women")
+//     // const womenId = womenfilter.map((item)=> item._id)
+//     // console.log(womenId);
+//     // const result = await productModel.updateMany({_id : {$in : womenId}},{category : "Women"})
+    
+//     const kidsfilter = products.filter((item)=>item.name.split(" ")[0] === "Boy" || item.name.split(" ")[0] === "Girls" || item.name.split(" ")[0] === "Kid")
+//     const kidsId = kidsfilter.map((item)=> item._id)
+//     console.log(kidsfilter.length);
+//     const result = await productModel.updateMany({_id : {$in : kidsId}},{category : "Kids"})
+    
+//     //console.log(names)
+
+
+
+//     // Update those products
+//     // const result = await productModel.updateMany(
+//     //   { _id: { $in: ids } },
+//     //   { $set: { bestseller: true } }
+//     // );
+//     // const result = await productModel.updateMany(
+//     //     {_id : {$in : ids}},{$set : {bestseller : false}}
+//     // );
+//     //const result = await productModel.updateMany({name : "Women"})
+
+//     // console.log(`Successfully updated ${result.nModified} products.`);
+//   } catch (error) {
+//     console.error("Error updating products:", error);
+//   }
+// };
+
+// updateFirst6Products();
+
+
 export {addProduct,listProducts,removeProduct,singleProduct}

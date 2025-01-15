@@ -31,6 +31,7 @@ const Add = ({token}) => {
             formData.append("category",category)
             formData.append("subCategory",subCategory)
             formData.append("bestseller",bestseller)
+            // formData.append("bestseller", bestseller ? '1' : '0')
             formData.append("sizes",JSON.stringify(sizes))
 
             image1 && formData.append("image1",image1)
@@ -94,8 +95,8 @@ const Add = ({token}) => {
       
       <div className='flex flex-col sm:flex-row gap-2 w-full sm:gap-8'>
         <div>
-            <p onChange={(e)=>setCategory(e.target.value)} className='mb-2'>Product Category</p>
-            <select className='w-full px-3 py-2'>
+            <p className='mb-2'>Product Category</p>
+            <select onChange={(e)=>setCategory(e.target.value)} className='w-full px-3 py-2'>
                 <option value="Men">Men</option>
                 <option value="Women">Women</option>
                 <option value="Kids">Kids</option>
