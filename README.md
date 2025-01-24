@@ -19,6 +19,6 @@ This is a full-stack eCommerce website built using the **MERN Stack** (MongoDB, 
 - **Payment Gateways**: Stripe, Razorpay
 - **Deployment**: Vercel (Frontend), Heroku (Backend)
 
-- Sample Preview of website is available here -- https://e-commerceshoppingcart-jqnunchm8-rithvijs-projects-cd5a446b.vercel.app/#
+- Sample Preview of website is available here -- https://shoppingcartappfrontend.vercel.app/
 
 ![App Preview](./app-preview.jpeg)
